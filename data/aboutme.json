@@ -1,12 +1,9 @@
 {
-  "description": "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.",
+  "description": "I am a third‑year Computer Science student at University of Buenos Aires, passionate about creating polished, high‑quality applications.",
   "skills": [
-    "Web design",
-    "User experience",
-    "Inclusive design",
-    "Focus group testing",
-    "Mobile user interfaces",
-    "Graphic design"
+    "Frameworks: .NET, ASP. NET both Core and MVC, Entity Framework Core, Blazor Server and WebAssembly",
+    "Other Technologies: C#, HTML5, CSS, XAML, SQL Server, PostgreSQL, SQLite, Git, RESTful APIs, Azure",
+    "Languages: English, Spanish"
   ],
-  "detailOrQuote": "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all."
+  "detailOrQuote": "Eager to begin my professional journey, I aim to deepen my expertise in fullstack development by contributing to innovative tech solutions and continually growing as a developer."
 }

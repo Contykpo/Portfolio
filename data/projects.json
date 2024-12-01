@@ -1,22 +1,30 @@
 ﻿[
   {
-    "title": "10 Things To Know About Azure Static Web Apps",
-    "description": "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    "url": "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+    "Title": "Documancer, GPT Assisted Narrator",
+    "Description": "Serialize roleplay events and build a rich world through log notes and an AI driven event narrator.",
+    "Url": "https://github.com/Contykpo/Documancer",
+    "PreviewImages": [ "images/projects/documancerProfile.svg" ],
+    "Technologies": [ "images/technologies/net.svg", "images/technologies/aspnetcore.svg", "images/technologies/blazor.svg", "images/technologies/gpt.svg", "images/technologies/postgresql.svg" ]
   },
   {
-    "title": "Web Development for Beginners",
-    "description": "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    "url": "https://github.com/microsoft/web-dev-for-beginners"
+    "Title": "Milky Pants Cheese, production and inventory management",
+    "Description": "An ASP. NET Core application with backend powered by Entity Framework and MySQL. Based on a fictional dairy company for the Argentina's INET - ETP NATIONAL OLYMPICS 2021.",
+    "Url": "https://github.com/Contykpo/MilkyPantsCheese-Administracion-",
+    "PreviewImages": [ "images/projects/milkyPantsMilkyUser.svg", "images/projects/milkyPantsMilkingYard.svg", "images/projects/milkyPantsAdmin.svg", "images/projects/milkyPantsYeastManager.svg", "images/projects/milkyPantsMonitoring.svg" ],
+    "Technologies": [ "images/technologies/net.svg", "images/technologies/aspnetcore.svg", "images/technologies/mysql.svg" ]
   },
   {
-    "title": "My Resume Site",
-    "description": "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    "url": "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+    "Title": "AplicacionGM, roleplay campaign manager",
+    "Description": "Create GURPS campaigns with their own sets of Characters Sheets, Maps, Actions, etc. And save your progress in an SQLite database to resume your roleplay sessions later on.",
+    "Url": "https://github.com/ElGranNachito/AplicacionGM",
+    "PreviewImages": [ "images/projects/aplicacionGMHome.svg", "images/projects/aplicacionGMCharacters.svg", "images/projects/aplicacionGMCharacterSheet.svg" ],
+    "Technologies": [ "images/technologies/net.svg", "images/technologies/wpf.svg", "images/technologies/sqlite.svg" ]
   },
   {
-    "title": "GitHub Codespaces and github.dev",
-    "description": "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    "url": "https://www.youtube.com/watch?v=c3hHhRME_XI"
+    "Title": "AstroLogger, Logging Library",
+    "Description": "Add the AstroLogger DLL reference to your project and create custom or default Loggers and Logger Factories with desired severity, format, and extra parameters.",
+    "Url": "https://github.com/Contykpo/AstroLogger",
+    "PreviewImages": [ "images/projects/astroicon.svg" ],
+    "Technologies": [ "images/technologies/net.svg" ]
   }
 ]

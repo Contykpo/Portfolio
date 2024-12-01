@@ -1,17 +1,22 @@
 [
   {
-    "name": "home",
-    "src": "images/woman-with-tablet.jpg",
-    "alt": "woman with glasses holding a tablet"
+    "Name": "home",
+    "Source": "images/background-pattern.svg",
+    "AlternateText": "A large landmass in the west emisphere of The Cradle."
   },
   {
-    "name": "about",
-    "src": "images/motion-background.jpg",
-    "alt": "gray abstract background"
+    "Name": "about",
+    "Source": "images/background-pattern.svg",
+    "AlternateText": "Abstract background of the landmass in the east emisphere of the map."
   },
   {
-    "name": "portfolio",
-    "src": "images/design-desk.jpeg",
-    "alt": "desktop with books and laptop"
+    "Name": "portfolio",
+    "Source": "images/background-pattern.svg",
+    "AlternateText": "A forgiven territory of no return."
+  },
+  {
+    "Name": "contactform",
+    "Source": "images/background-pattern.svg",
+    "AlternateText": "A forgiven territory of no return."
   }
 ]
