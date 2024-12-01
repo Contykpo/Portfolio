@@ -1,0 +1,1213 @@
+@import '_content/Blazor.Bootstrap/Blazor.Bootstrap.bundle.scp.css';
+
+/* /Components/CultureSelector.razor.rz.scp.css */
+.culture-selector[b-n9ojii4wxi] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag-container[b-n9ojii4wxi] {
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+    .flag-container:hover[b-n9ojii4wxi] {
+        border-color: lightblue;
+    }
+
+.flag-img[b-n9ojii4wxi] {
+    width: 40px;
+    height: auto;
+    border-radius: 5px;
+}
+/* /Components/FileDownload.razor.rz.scp.css */
+/* Styling for the google drive button link */
+.download-file-button[b-93riz1wo3h] {
+    display: flex;
+    align-items: center;
+    /* Ocean blue background */
+    background-color: aliceblue;
+    /* Dark blue border */
+    border: 2px solid rgba(20, 31, 56, 1);
+    padding: 0.5rem 1rem;
+    /* Smoothed borders */
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Image icon styling */
+.download-file-icon[b-93riz1wo3h] {
+    width: 24px;
+    height: 24px;
+    /* Space between the image and the text */
+    margin-left: 0.75rem;
+}
+
+/* Styling for the text inside the google drive button */
+.download-file-button h5[b-93riz1wo3h] {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(39, 61, 110, 1);
+}
+
+/* Hover effects for the button */
+.download-file-button:hover[b-93riz1wo3h] {
+    /* Ocean blue background */
+    background-color: rgba(49, 81, 140, 1);
+    /* Lift the button slightly */
+    transform: translateY(-3px);
+}
+
+    .download-file-button:hover h5[b-93riz1wo3h] {
+        color: aliceblue;
+    }
+
+    .download-file-button:hover img[b-93riz1wo3h] {
+        filter: brightness(0) invert(1) brightness(1000%);
+    }
+/* /Components/ProjectBox.razor.rz.scp.css */
+.project-box[b-e7t6hb5znd] {
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    /* Default size for desktop view */
+    max-width: 600px;
+    height: 400px;
+    margin: auto;
+    /* Set up a grid to keep elements aligned */
+    display: grid;
+    grid-template-rows: 1fr auto; /* Content takes 1fr, logos at the bottom */
+}
+.project-content[b-e7t6hb5znd] {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 Columns */
+    grid-template-rows: 1fr auto; /* 2 Rows */
+    gap: 1rem;
+}
+
+/* Size and layout for mobile view */
+@media (max-width: 768px) {
+    .project-box[b-e7t6hb5znd] {
+        max-width: 100%;
+        height: 500px; /* Mobile-specific height */
+        border-radius: 20px;
+        grid-template-rows: 1fr auto; /* Content and logos at the bottom */
+    }
+
+    .project-content[b-e7t6hb5znd] {
+        grid-template-columns: 1fr; /* Single-column layout */
+        grid-template-rows: auto auto auto auto; /* Adjusted rows */
+    }
+
+    .technology-logos[b-e7t6hb5znd] {
+        grid-row: 4 / 5; /* Ensure it's the last element */
+        justify-self: center; /* Center the logos for better mobile aesthetics */
+    }
+}
+
+
+/* First Column, First Row: Slideshow with Overlay Controls */
+.project-slideshow[b-e7t6hb5znd] {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-slideshow-img[b-e7t6hb5znd] {
+    width: 100%;
+    max-height: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Slideshow control buttons */
+.slideshow-controls[b-e7t6hb5znd] {
+    position: absolute;
+    background-color: rgba(49, 81, 140, 0.5);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 50%;
+}
+
+    .slideshow-controls img[b-e7t6hb5znd] {
+        width: 24px;
+        height: 24px;
+    }
+
+    .slideshow-controls.previous[b-e7t6hb5znd] {
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .slideshow-controls.next[b-e7t6hb5znd] {
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+/* Second Column, First Row: Project Info */
+.project-info[b-e7t6hb5znd] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    .project-info h3[b-e7t6hb5znd] {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: #555;
+    }
+
+    .project-info p[b-e7t6hb5znd] {
+        font-size: 1rem;
+        color: #555;
+    }
+
+/* First Column, Second Row: Technology Logos */
+.technology-logos[b-e7t6hb5znd] {
+    grid-row: 2 / 3; /* Place in the second row of the project box grid */
+    justify-self: start; /* Align to the left */
+    align-self: end; /* Stick to the bottom */
+    display: flex; /* Maintain flexibility for logos */
+    gap: 1rem;
+}
+
+.tech-logo[b-e7t6hb5znd] {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+
+    .tech-logo:hover[b-e7t6hb5znd] {
+        transform: scale(1.2);
+    }
+
+/* Second Column, Second Row: GitHub Button */
+.github-button[b-e7t6hb5znd] {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(49, 81, 140, 0.5);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .github-button img[b-e7t6hb5znd] {
+        width: 36px;
+        height: 36px;
+    }
+
+    .github-button:hover[b-e7t6hb5znd] {
+        background-color: rgba(49, 81, 140, 0.8);
+        transform: scale(1.1);
+    }
+/* /Components/Sections/About.razor.rz.scp.css */
+/* styles for the "about myself" section */
+#about[b-9n0j4iahb8] {
+    /* General padding */
+    padding: 2rem 1rem;
+    /* Position for the background image */
+    position: relative;
+    /* Center the text */
+    text-align: center;
+}
+
+/* About section styling */
+.about-section[b-9n0j4iahb8] {
+    min-height: 75vh;
+    color: transparent;
+    padding: 8rem 0;
+}
+
+.about-title[b-9n0j4iahb8] {
+    padding-top: 8rem;
+}
+
+/* About content container */
+.about-content[b-9n0j4iahb8] {
+    /* Dark semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Light-blue border */
+    border: 2px solid rgba(173, 216, 230, 0.8);
+    /* Smooth rounded corners */
+    border-radius: 15px;
+    /* Padding inside the panel */
+    padding: 2rem;
+    /* Width limit for the panel */
+    max-width: 90%;
+    /* Center panel horizontally */
+    margin: 2rem auto;
+    /* For positioning animations */
+    position: relative;
+    /* Subtle shadow for depth */
+    box-shadow: 0 0 20px rgba(173, 216, 230, 0.5);
+    /* Prevent content overflow */
+    overflow: hidden;
+    /* Smooth transition for hover effect */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Glowing pulse animation */
+    animation: pulse-b-9n0j4iahb8 3s infinite;
+    /* Center content text */
+    text-align: center;
+}
+
+/* Glowing pulse effect */
+@keyframes pulse-b-9n0j4iahb8 {
+    0% {
+        box-shadow: 0 0 10px rgba(173, 216, 230, 0.6);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(173, 216, 230, 1);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgba(173, 216, 230, 0.6);
+    }
+}
+
+/* Hover effect: Lightens background on hover */
+.about-content:hover[b-9n0j4iahb8] {
+    /* Lighter semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Stronger shadow when hovered */
+    box-shadow: 0 0 30px rgba(173, 216, 230, 1);
+}
+
+/* Skills list styling */
+.skills-list[b-9n0j4iahb8] {
+    text-align: left;
+    font-size: 1.25rem;
+    margin: 2rem 0;
+    /* Remove extra padding to avoid overflow */
+    padding: 0;
+    /* Gap between columns */
+    column-gap: 2rem;
+    /* Ensure bullets are not too close to the edge */
+    padding-inline-start: 20px;
+}
+
+.skills-list-item[b-9n0j4iahb8] {
+    padding: 1rem;
+}
+
+/* Media query for larger screens (e.g., desktops, tablets in landscape mode) */
+/* Adjust breakpoint as needed */
+@media screen and (min-width: 1024px) {
+    .about-content[b-9n0j4iahb8] {
+        /* Make the block wider on desktop */
+        max-width: 80%;
+        /* Increase padding to suit the wider layout */
+        padding: 3rem;
+    }
+
+    .skills-list[b-9n0j4iahb8] {
+        /* Two columns for larger screens */
+        columns: 1;
+    }
+}
+
+/* Media query for smaller screens (e.g., tablets in portrait mode, mobile phones) */
+@media screen and (max-width: 1024px) {
+    .about-content[b-9n0j4iahb8] {
+        /* Adjust width for smaller screens */
+        max-width: 85%;
+        padding: 2.5rem;
+    }
+}
+
+/* Media query for smaller screens (e.g., phones in portrait mode) */
+@media screen and (max-width: 767px) {
+    .about-content[b-9n0j4iahb8] {
+        /* Full width with some padding */
+        width: 90%;
+        /* Adjust padding */
+        padding: 2rem 4rem;
+    }
+
+    .skills-list[b-9n0j4iahb8] {
+        /* Single column for small screens */
+        columns: 1;
+        /* Align with content */
+        padding-inline-start: 0;
+        /* Remove margin to align with container */
+        margin: 0;
+    }
+}
+
+/* optional: responsive typography */ 
+h2[b-9n0j4iahb8] {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: aliceblue;
+}
+
+hr[b-9n0j4iahb8] {
+    color: aliceblue;
+}
+
+p[b-9n0j4iahb8] {
+    color: aliceblue;
+}
+
+p.large[b-9n0j4iahb8] {
+    font-size: 1.5rem;
+}
+
+p.detail[b-9n0j4iahb8] {
+    padding: 1rem 3rem 0;
+}
+
+li[b-9n0j4iahb8] {
+    color: aliceblue;
+}
+
+li[b-9n0j4iahb8]::marker {
+    color: aliceblue;
+}
+/* /Components/Sections/ContactForm.razor.rz.scp.css */
+/* Make the light background cover the entire viewport */
+.contactform-section[b-2fjnd1oim8] {
+    padding: 8rem 0;
+    text-align: center;
+    vertical-align: central;
+    width: 100%;
+    margin: 0 auto;
+    color: transparent;
+}
+
+/* Grid container styling */
+.responsive-grid-container[b-2fjnd1oim8] {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 2rem; /* Space between the columns */
+    justify-items: center; /* Center the grid items horizontally */
+    align-items: center; /* Center the grid items vertically */
+    vertical-align: central;
+}
+
+/* Panel container for form and messages */
+.contact-panel[b-2fjnd1oim8] {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    padding: 2rem;
+    border: 2px solid #ccc;
+    width: 600px;
+    height: 300px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contact form styles */
+.contact-form[b-2fjnd1oim8] {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+    .contact-form input[b-2fjnd1oim8], .contact-form textarea[b-2fjnd1oim8] {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        transition: border-color 0.3s;
+    }
+
+        /* Focused state */
+        .contact-form input:focus[b-2fjnd1oim8], .contact-form textarea:focus[b-2fjnd1oim8] {
+            border-color: #007bff;
+            outline: none;
+        }
+
+
+/* Success and error messages */
+.message[b-2fjnd1oim8] {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.success-message[b-2fjnd1oim8] {
+    color: green;
+    background-color: rgba(0, 255, 0, 0.1);
+    border: 1px solid green;
+}
+
+.error-message[b-2fjnd1oim8] {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.1);
+    border: 1px solid red;
+}
+
+.input-error-message[b-2fjnd1oim8] {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+/* Styling for the send form button */
+.send-button[b-2fjnd1oim8] {
+    display: flex;
+    align-items: center;
+    /* Ocean blue background */
+    background-color: aliceblue;
+    /* Dark blue border */
+    border: 2px solid rgba(20, 31, 56, 1);
+    padding: 0.5rem 1.5rem;
+    /* Smoothed borders */
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Styling for the text inside the google drive button */
+    .send-button h5[b-2fjnd1oim8] {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: rgba(39, 61, 110, 1);
+    }
+
+    /* Hover effects for the button */
+    .send-button:hover[b-2fjnd1oim8] {
+        /* Ocean blue background */
+        background-color: rgba(49, 81, 140, 1);
+    }
+
+        .send-button:hover h5[b-2fjnd1oim8] {
+            color: aliceblue;
+        }
+
+/* Grid titles next to the panel (desktop view) */
+.grid-header[b-2fjnd1oim8] {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* Responsive typography */
+    .grid-header h2[b-2fjnd1oim8] {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        color: aliceblue;
+    }
+
+    .grid-header p[b-2fjnd1oim8] {
+        font-size: 2rem;
+        color: aliceblue;
+    }
+
+/* Responsive behavior for mobile and tablet */
+@media screen and (max-width: 768px) {
+    .responsive-grid-container[b-2fjnd1oim8] {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        gap: 1.5rem; /* Space between the rows */
+    }
+
+    .grid-header[b-2fjnd1oim8] {
+        /* Ensure this comes first */
+        order: 1;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .contact-panel[b-2fjnd1oim8] {
+        /* Ensure the panel comes below the header */
+        order: 2;
+        margin: 0 auto;
+        padding: 1rem;
+        max-width: 300px;
+    }
+
+    .contact-form button[b-2fjnd1oim8] {
+        font-size: 1.2rem;
+        padding: 0.75rem;
+    }
+}
+/* /Components/Sections/Home.razor.rz.scp.css */
+/* Home section styling */
+.home-section[b-b9a7baap93] {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Background image styling */
+.background[b-b9a7baap93] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Ensures the image covers the entire section without distortion */
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Home content container */
+.home-content[b-b9a7baap93] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 2rem;
+    /* Adjust for the navbar */
+    padding-top: 4rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Title Section */
+.home-title[b-b9a7baap93] {
+    width: 50%;
+    text-align: center;
+    padding-left: 1rem;
+    z-index: 1;
+}
+
+    .home-title h1[b-b9a7baap93] {
+        color: aliceblue;
+    }
+
+    .home-title h2[b-b9a7baap93] {
+        color: aliceblue;
+    }
+
+/* 3D Model Section */
+.home-container3D[b-b9a7baap93] {
+    width: 50%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure the 3D canvas occupies the right side */
+#container3D canvas[b-b9a7baap93] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Styling for the email button container */
+.email-button[b-b9a7baap93] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* Styling for the email button link */
+.email-link[b-b9a7baap93] {
+    display: flex;
+    align-items: center;
+    /* Ocean blue background */
+    background-color: aliceblue;
+    /* Dark blue border */
+    border: 2px solid rgba(20, 31, 56, 1);
+    padding: 0.5rem 1rem;
+    /* Smoothed borders */
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Image icon styling */
+.email-icon[b-b9a7baap93] {
+    width: 24px;
+    height: 24px;
+    /* Space between the image and the text */
+    margin-left: 0.75rem;
+}
+
+/* Styling for the text inside the email button */
+.email-link h5[b-b9a7baap93] {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(39, 61, 110, 1);
+}
+
+/* Hover effects for the button */
+.email-link:hover[b-b9a7baap93] {
+    /* Ocean blue background */
+    background-color: rgba(49, 81, 140, 1);
+    /* Lift the button slightly */
+    transform: translateY(-3px);
+}
+
+    .email-link:hover h5[b-b9a7baap93] {
+        color: aliceblue;
+    }
+
+    .email-link:hover img[b-b9a7baap93] {
+        filter: brightness(0) invert(1) brightness(1000%);
+    }
+
+
+/* Styling for the email button container */
+.google-drive-button[b-b9a7baap93] {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* Styling for the google drive button link */
+.google-drive-link[b-b9a7baap93] {
+    display: flex;
+    align-items: center;
+    /* Ocean blue background */
+    background-color: aliceblue;
+    /* Dark blue border */
+    border: 2px solid rgba(20, 31, 56, 1);
+    padding: 0.5rem 1rem;
+    /* Smoothed borders */
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Image icon styling */
+.google-drive-icon[b-b9a7baap93] {
+    width: 24px;
+    height: 24px;
+    /* Space between the image and the text */
+    margin-left: 0.75rem;
+}
+
+/* Styling for the text inside the google drive button */
+.google-drive-link h5[b-b9a7baap93] {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(39, 61, 110, 1);
+}
+
+/* Hover effects for the button */
+.google-drive-link:hover[b-b9a7baap93] {
+    /* Ocean blue background */
+    background-color: rgba(49, 81, 140, 1);
+    /* Lift the button slightly */
+    transform: translateY(-3px);
+}
+
+    .google-drive-link:hover h5[b-b9a7baap93] {
+        color: aliceblue;
+    }
+
+    .google-drive-link:hover img[b-b9a7baap93] {
+        filter: brightness(0) invert(1) brightness(1000%);
+    }
+
+
+.grid-container[b-b9a7baap93] {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+/* Home arrow positioning - always centered */
+.home-arrow[b-b9a7baap93] {
+    position: absolute;
+    /* Slight adjustment for mobile view */
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Ensure it stays above other elements */
+    z-index: 2;
+}
+
+/* Scrollable mobile view adjustments */
+@media screen and (max-width: 768px) {
+    .home-content[b-b9a7baap93] {
+        flex-direction: column;
+        justify-content: flex-start;
+        /* Allow content to expand */
+        height: auto;
+        padding: 1rem;
+        /* Add enough padding for the navbar in mobile */
+        padding-top: 6rem;
+        overflow: visible;
+    }
+
+    .home-title[b-b9a7baap93] {
+        /* Full width for mobile */
+        width: 100%;
+        /* Center the text */
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .home-container3D[b-b9a7baap93] {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    #container3D canvas[b-b9a7baap93] {
+        width: 100%;
+        /* Shrinks the canvas on mobile */
+        height: 50vh;
+    }
+
+    body[b-b9a7baap93] {
+        /* Enable vertical scrolling */
+        overflow-y: scroll;
+    }
+
+    section.dark[b-b9a7baap93] {
+        /* Allow section to grow */
+        min-height: auto;
+        height: auto;
+        overflow: visible;
+    }
+
+    .home-arrow[b-b9a7baap93] {
+        /* Ensure it's always positioned at the bottom */
+        bottom: 1rem;
+    }
+}
+/* /Components/Sections/Portfolio.razor.rz.scp.css */
+/* Styles for the portfolio section */
+.portfolio-section[b-oqoh4tai67] {
+    padding: 8rem 0;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    color: transparent;
+}
+
+.project-grid[b-oqoh4tai67] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+    width: 100%;
+    /* Optional max width for larger screens */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .project-grid[b-oqoh4tai67] {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-grid[b-oqoh4tai67] {
+        grid-template-columns: 1fr;
+    }
+}
+
+h2[b-oqoh4tai67] {
+    color: aliceblue;
+}
+/* /Layout/Footer.razor.rz.scp.css */
+#contact[b-swndnfy217] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 5rem 0 3rem;
+    width: 100vw;
+}
+
+.contact[b-swndnfy217] {
+    background-color: aliceblue;
+}
+
+.loading-block[b-swndnfy217] {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.icon-row[b-swndnfy217] {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.title-paragraph[b-swndnfy217] {
+    margin-top: 0;
+    color: rgba(39, 61, 110, 1);
+    font-weight: 600;
+}
+/* /Layout/Header.razor.rz.scp.css */
+/* Navbar styling */
+.navbar[b-wi7g7pr6cu] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 1000;
+}
+
+/* Left-side logo */
+.navbar-title[b-wi7g7pr6cu] {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navbar-logo[b-wi7g7pr6cu] {
+    text-decoration: none;
+    color: rgba(39, 61, 110, 1);
+    font-weight: bold;
+}
+
+/* Navbar links for desktop */
+.navbar-links[b-wi7g7pr6cu] {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+    .navbar-links a[b-wi7g7pr6cu] {
+        text-decoration: none;
+        color: rgba(39, 61, 110, 1);
+        font-weight: bold;
+    }
+
+/* Hamburger button styling */
+.hamburger[b-wi7g7pr6cu] {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Side panel styling */
+.side-panel[b-wi7g7pr6cu] {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    padding: 2rem 1rem;
+}
+
+/* Panel content */
+.panel-content[b-wi7g7pr6cu] {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 15%;
+    justify-content: space-between;
+}
+
+/* Vertical links */
+.vertical-links a[b-wi7g7pr6cu] {
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    color: rgba(39, 61, 110, 1);
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+    .vertical-links a:hover[b-wi7g7pr6cu] {
+        color: #007bff;
+    }
+
+/* Horizontal buttons */
+.horizontal-buttons[b-wi7g7pr6cu] {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+    .horizontal-buttons button[b-wi7g7pr6cu] {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .horizontal-buttons button:hover[b-wi7g7pr6cu] {
+            background-color: #0056b3;
+        }
+
+/* Mobile view adjustments */
+@media screen and (max-width: 768px) {
+    .navbar-links[b-wi7g7pr6cu] {
+        display: none;
+    }
+
+    .hamburger[b-wi7g7pr6cu] {
+        display: block;
+    }
+
+    .side-panel[b-wi7g7pr6cu] {
+        /* Full width on mobile */
+        width: 50%;
+        max-width: 75%;
+    }
+}
+/* /Layout/MainLayout.razor.rz.scp.css */
+.page[b-e54581zuur] {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Default to column for better responsiveness */
+    max-width: 100%; /* Prevent overflow */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+main[b-e54581zuur] {
+    flex: 1;
+    width: 100%; /* Ensure it takes full width */
+}
+
+.sidebar[b-e54581zuur] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    width: 100%; /* Adjust to full width on mobile */
+    max-width: 250px; /* Keep the sidebar to a max width */
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.top-row[b-e54581zuur] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Improved for mobile view */
+    height: 3.5rem;
+    padding: 0 1rem; /* Prevent excessive padding causing overflow */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+    .top-row a[b-e54581zuur], .top-row .btn-link[b-e54581zuur] {
+        white-space: nowrap;
+        margin-left: 1rem;
+        text-decoration: none;
+    }
+
+        .top-row a:hover[b-e54581zuur], .top-row .btn-link:hover[b-e54581zuur] {
+            text-decoration: underline;
+        }
+
+        .top-row a:first-child[b-e54581zuur] {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+/* Adjustments for smaller screens */
+@media (max-width: auto) {
+    .page[b-e54581zuur] {
+        flex-direction: column; /* Ensure everything stacks properly */
+        overflow-x: hidden; /* Prevent overflow on mobile */
+    }
+
+    .top-row[b-e54581zuur] {
+        padding: 0.5rem; /* Reduce padding */
+    }
+
+        .top-row a[b-e54581zuur], .top-row .btn-link[b-e54581zuur] {
+            margin-left: 0;
+        }
+
+    .sidebar[b-e54581zuur] {
+        width: 100%; /* Sidebar takes full width */
+        position: relative; /* Adjust for better stacking on mobile */
+        height: auto; /* Allow height to auto adjust */
+    }
+}
+
+/* Adjustments for larger screens */
+@media (min-width: auto) {
+    .page[b-e54581zuur] {
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+    .sidebar[b-e54581zuur] {
+        width: 250px;
+    }
+
+    .top-row.auth a:first-child[b-e54581zuur] {
+        flex: 1;
+        text-align: right;
+        width: auto;
+    }
+
+    .top-row[b-e54581zuur], article[b-e54581zuur] {
+        padding-left: 2rem;
+        padding-right: 1.5rem;
+        max-width: 100%; /* Prevent overflow */
+    }
+}
+/* /Layout/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-pr6vure15x] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-pr6vure15x] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-pr6vure15x] {
+    font-size: 1.1rem;
+}
+
+.bi[b-pr6vure15x] {
+    display: inline-block;
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.75rem;
+    top: -1px;
+    background-size: cover;
+}
+
+.bi-house-door-fill-nav-menu[b-pr6vure15x] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-house-door-fill' viewBox='0 0 16 16'%3E%3Cpath d='M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z'/%3E%3C/svg%3E");
+}
+
+.bi-plus-square-fill-nav-menu[b-pr6vure15x] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-plus-square-fill' viewBox='0 0 16 16'%3E%3Cpath d='M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z'/%3E%3C/svg%3E");
+}
+
+.bi-list-nested-nav-menu[b-pr6vure15x] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-list-nested' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E");
+}
+
+.nav-item[b-pr6vure15x] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-pr6vure15x] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-pr6vure15x] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-pr6vure15x]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-pr6vure15x]  a.active {
+    background-color: rgba(255,255,255,0.37);
+    color: white;
+}
+
+.nav-item[b-pr6vure15x]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-pr6vure15x] {
+        display: none;
+    }
+
+    .collapse[b-pr6vure15x] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+    
+    .nav-scrollable[b-pr6vure15x] {
+        /* Allow sidebar to scroll for tall menus */
+        height: calc(100vh - 3.5rem);
+        overflow-y: auto;
+    }
+}
+/* /Pages/Index.razor.rz.scp.css */
+/* Spotlight effect */
+#spotlight[b-98t26t75f9] {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(53, 96, 148, 0.27), transparent 80%);
+    /* Prevent interaction with the spotlight */
+    pointer-events: none;
+    /* Ensures the spotlight appears lighter on dark areas */
+    mix-blend-mode: screen;
+    /* Make sure it's above other elements */
+    z-index: 10;
+    /* Apply a soft blur for the glowing effect */
+    filter: blur(50px);
+    /* Smooth following effect */
+    transition: left 0.05s, top 0.05s;
+}
+
+/* Ensure the spotlight is hidden outside the viewport */
+.glass-overlay[b-98t26t75f9] {
+    overflow: hidden;
+    position: relative;
+}
