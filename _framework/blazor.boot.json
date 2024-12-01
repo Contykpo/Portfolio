@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "samuelfurlanich.github.io",
   "resources": {
-    "hash": "sha256-t94/a/lxX6JZKhSmgEdPwdz7/OiSB4O1irG2lyrjVn8=",
+    "hash": "sha256-Df0viFbD2Knd5MKzpYCsZWlZarFiTjDf7LISqWVA7ao=",
     "jsModuleNative": {
       "dotnet.native.8.0.8.jpq1tle2zk.js": "sha256-CC6791/fuN3JkEw/6qYCD2P3x6+3Eh6Vnu7XWsyxtMA="
     },
@@ -77,7 +77,7 @@
     },
     "satelliteResources": {
       "es": {
-        "samuelfurlanich.github.io.resources.wasm": "sha256-g4hgspUzCL/PQJj+0On2efjeV5dBp1l36yyDaIh5pBo="
+        "samuelfurlanich.github.io.resources.wasm": "sha256-LvxDEv0UQTtMF19Y01dIPE1d0pswL8n8+6vPL84C+io="
       }
     }
   },
