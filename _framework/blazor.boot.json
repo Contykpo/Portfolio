@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "samuelfurlanich.github.io",
   "resources": {
-    "hash": "sha256-t94/a/lxX6JZKhSmgEdPwdz7/OiSB4O1irG2lyrjVn8=",
+    "hash": "sha256-A7eoY8YC7UWpC/yVqatqp7DzgGbFg/rGwRMLk5P+slc=",
     "jsModuleNative": {
       "dotnet.native.8.0.8.jpq1tle2zk.js": "sha256-CC6791/fuN3JkEw/6qYCD2P3x6+3Eh6Vnu7XWsyxtMA="
     },
@@ -36,11 +36,11 @@
       "Microsoft.Extensions.Logging.wasm": "sha256-8BH+kQfjYuZWxprOICXJ4+tU0OdJOYDKN7G0S3zYYHI=",
       "Microsoft.Extensions.Options.wasm": "sha256-gE1BXyLWVUnQwUrxnkNGo22RSc/PIEaAypz1VWboWP4=",
       "Microsoft.Extensions.Primitives.wasm": "sha256-oum3eYu6MXzGboLb0DOyZmaugivpgWZnIiKtzeqlX6w=",
-      "Microsoft.JSInterop.wasm": "sha256-WDUiw1QGeRFi7957OO7P4gcamQCUGRoPLutQHBEQQyo=",
+      "Microsoft.JSInterop.wasm": "sha256-NFLR8czsByJ6RawxMo8Xk8W3ADJQRLwewVYIwpk76Nc=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-sLSiCKh0RQEV/2cl05tr7wOLWzExQfPZovvpqYLJduQ=",
       "Microsoft.Net.Http.Headers.wasm": "sha256-b59APrldqivzbOYVb0CV+lGgWn4HyUPjMa/cplEp2x8=",
       "netstandard.wasm": "sha256-PDzNe7ezNL20kbkbjcNft85lvrZ5HBYJk9Nn1IjhDcY=",
-      "samuelfurlanich.github.io.wasm": "sha256-cvq5BMPPWXBcHnJ30tE2NTgiknO1MCT72yRz3lL99rI=",
+      "samuelfurlanich.github.io.wasm": "sha256-rUI2dfLdJV2hfi0t2nrNCArhpT/tJ7ub23vfkEbY06k=",
       "System.Buffers.wasm": "sha256-d665UCxfwHl/GoDgZr0BIhXhlxHSkJcIX/2jTHdyJs4=",
       "System.Collections.Concurrent.wasm": "sha256-TPKntnd8gIQKIse5mdjIQFDKs+wXA4rBiV1T8H3Ch7A=",
       "System.Collections.NonGeneric.wasm": "sha256-obaThsPaJmrUccVrKiO1cMNuF9CnKdOtzwjjlKWqO0A=",
@@ -77,7 +77,7 @@
     },
     "satelliteResources": {
       "es": {
-        "samuelfurlanich.github.io.resources.wasm": "sha256-g4hgspUzCL/PQJj+0On2efjeV5dBp1l36yyDaIh5pBo="
+        "samuelfurlanich.github.io.resources.wasm": "sha256-KJcmqI4ntDIMK999Lal1iQpAPuqYPZEF1luQ66T85oI="
       }
     }
   },
